@@ -1,0 +1,64 @@
+@import "bootstrap/scss/bootstrap";
+
+.letter {
+  display: inline;
+  background-color: #3C8D99;
+  padding: 8px;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 0 8px;
+}
+
+form {
+  margin-top: 32px;
+}
+
+form button {
+  margin-top: 32px;
+}
+
+.submit-btn {
+  background-color: #3C8D99;
+  color: white;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  color: white;
+  background-color: #327882;
+}
+
+body {
+  height: 100%;
+  background: #aa4b6b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: darkgrey;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin: 48px 0;
+  color: black
+}
+
+.text-card {
+  background-color: white;
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 600px;
+}
+
+.text-alert {
+  margin-top: 32px;
+}

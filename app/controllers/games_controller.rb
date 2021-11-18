@@ -13,10 +13,13 @@ class GamesController < ApplicationController
     url = "https://wagon-dictionary.herokuapp.com/#{attempt}"
     attempt_serialized = URI.open(url).read
     user_attempt = JSON.parse(attempt_serialized)
+    @message = "You should type something at least! 🤷‍♂️"
 
     attempt = attempt.upcase.chars
     letters_used = 0
     testing = attempt.all? { |z| grid.include?(z) }
+
+    return @message if attempt == ''
 
     attempt.each do |letter|
       if grid.include?(letter)
@@ -36,7 +39,6 @@ class GamesController < ApplicationController
     elsif user_attempt["found"] == true
       @message = "Awesome! You used #{letters_used} letters from the grid! 🎉"
     end
-
 
   end
 end
